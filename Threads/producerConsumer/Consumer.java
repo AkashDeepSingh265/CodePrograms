@@ -44,7 +44,7 @@ public class Consumer extends Thread {
 				while(sharedValue[0]%2==1){
 					System.out.println("Thread 2 waiting for its turn");
 					try {
-						sharedQueue.wait();
+						sharedValue.wait();
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -55,7 +55,7 @@ public class Consumer extends Thread {
 				sharedQueue.notifyAll();
 			}
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(10);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

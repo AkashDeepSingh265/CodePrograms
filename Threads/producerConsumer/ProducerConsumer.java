@@ -10,7 +10,7 @@ public class ProducerConsumer {
 		int[] sharedValue = {0};
 		Producer producer = new Producer(sharedQueue,sharedValue);
 		Consumer consumer = new Consumer(sharedQueue,sharedValue);
-		producer.start();
 		consumer.start();
+		producer.start();
 	}
 }
