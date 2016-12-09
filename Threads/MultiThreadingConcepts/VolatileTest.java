@@ -16,7 +16,7 @@ public class VolatileTest {
             while ( local_value < 5){
                 if( local_value!= MY_INT){
                     System.out.println("Got Change for MY_INT :"+MY_INT);
-                     local_value= MY_INT;
+                     local_value = MY_INT;
                 }
             }
         }
