@@ -13,7 +13,6 @@ public class MergeSortLinkedList {
 		NodeLL head2 = MergeSortLL(root2);
 		
 		return MergeSortedLinkList(head1,head2);
-		
 	}
 	
 	private static NodeLL MergeSortedLinkList(NodeLL head1, NodeLL head2) {
