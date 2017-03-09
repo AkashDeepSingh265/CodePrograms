@@ -2,7 +2,6 @@ package MultiThreadingConcepts;
 
 public class InteruptingSleepingThread {
 
-	private int testVar =1;
 	public static void main(String[] args){
 		Thread mythread = new Thread(new Runnable() {
 			
