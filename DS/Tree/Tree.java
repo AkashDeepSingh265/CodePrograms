@@ -23,6 +23,7 @@ public class Tree {
 		char[] input = {'y','2','y','1','n','n','y','4','y','3','n','n','y','5','n','n','y','8','y','7','n','n','y','9','n','n'};
 		createTestBinaryTree(root,input);
 	}
+	
 	public void createTestTree1(){
 		index = -1;
 		char[] input = {'y','2','n','y','3','n','n','y','4','y','5','n','n','y','6','y','7','n','n','y','8','n','n'};
@@ -97,8 +98,8 @@ public class Tree {
 	}
 	private void postorder(Node node) {
 		if(node!=null){
-			postorder(node);
-			postorder(node);
+			postorder(node.getLeftChild());
+			postorder(node.getRightChild());
 			System.out.print(node.getData()+" ");
 		}
 		
@@ -113,7 +114,12 @@ public class Tree {
 		}
 	}
 
-
+	public static void main(String[] args){
+		Tree tree = new Tree(10);
+		tree.createTestTree();
+		tree.inorderTreversal();
+	}
+	
 	private void inorder(Node node) {
 		if(node != null){
 			inorder(node.getLeftChild());

@@ -16,19 +16,19 @@ import java.io.InputStream;
  * Actual solution is at the top
  * @author Nipuna Samarasekara
  */
-public class Main {
+public class MainTest {
 	public static void main(String[] args) {
 		InputStream inputStream = System.in;
 		OutputStream outputStream = System.out;
 		FastScanner in = new FastScanner(inputStream);
 		FastPrinter out = new FastPrinter(outputStream);
-		TaskC solver = new TaskC();
+		TaskCTest solver = new TaskCTest();
 		solver.solve(1, in, out);
 		out.close();
 	}
 }
 
-class TaskC {
+class TaskCTest {
     /////////////////////////////////////////////////////////////
 
     long[] level;

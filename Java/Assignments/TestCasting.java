@@ -24,7 +24,7 @@ public class TestCasting {
 		int[][] a2 = (int[][]) o;
 		int[] b2 = (int[]) o;
 		//compile error
-		System.out.println(new Alien().invade(7));
+		//System.out.println(new Alien().invade(7));
 	}
 }
 

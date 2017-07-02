@@ -28,7 +28,7 @@ public class PrintThread extends Thread{
 				}
 				System.out.println("Thread:"+threadNum+" value:"+value.get()%7);
 				value.incrementAndGet();
-				lock.notifyAll();
+				lock.notify();
 			}
 			try {
 				Thread.sleep(1000);

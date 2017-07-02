@@ -44,15 +44,7 @@ public class Producer extends Thread {
 	public void run() {
 		while(true){
 			synchronized (sharedQueue) {
-				while(sharedValue[0]%2==0){
-					System.out.println("Thread 1 waiting for its turn");
-					try {
-						sharedQueue.wait();
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
+				while(sharedValue[0]%2==0){ }
 				System.out.println("Thread1:"+sharedValue[0]);
 				sharedValue[0]++;
 				sharedQueue.notifyAll();
