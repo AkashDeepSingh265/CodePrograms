@@ -11,6 +11,7 @@ public class LRUCache {
 	
 	public static void referenceFromLruCache(Integer pageNumber){
 		if(map.get(pageNumber)!=null){
+			#map.con
 			
 		}
 	}
